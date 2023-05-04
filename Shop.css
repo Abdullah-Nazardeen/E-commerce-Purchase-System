@@ -1,0 +1,458 @@
+body {
+    background-color: antiquewhite;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: sans-serif;
+}
+.form-1 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+header {
+    width: 100%;
+    height: 15%;
+
+}
+.content {
+    display: flex;
+    flex-direction: row;
+    justify-content:space-around;
+    align-items: center;
+    height: 70%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+.products {
+    width: 75%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+.product {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    height: 80%;
+    width: 20%;
+    padding: 15px;
+    border-radius: 5%;
+    box-shadow: 5px 1px 10px black;
+
+}
+.img-container {
+    width: 80%;
+    height: 60%;
+    margin-bottom: 2%;
+}
+.img {
+    width: 100%;
+
+}
+#quantity1,#quantity2,#quantity3,#quantity4,#quantity5,#quantity6,#quantity7,#quantity8 {
+    margin-top: 2%;
+}
+.list {
+    width: 25%;
+    height: 95%;
+    background-color: aliceblue;
+    padding: 1%;
+    display: flex;
+    flex-direction: column;
+}
+.title-container {
+    margin-top: 8%;
+    margin-left: 4%;
+}
+.orders {
+    margin-left: 4%;
+}
+.order-list {
+    height: 50%;
+    margin-left: 4%;
+}
+.total-container {
+    margin-left: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.total-price {
+    margin-right: 19%;
+}
+.contact-container {
+    height: 15%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: 2px solid black;
+    margin: 0;
+}
+.contact{
+    width: 73.5%;
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+}
+.name-input {
+    margin-left: 2%;
+    margin-top: 2%;
+}
+.email-input {
+    margin-left: 15%;
+    margin-top: 2%;
+}
+.submit-container {
+    width: 26.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: aliceblue;
+}
+.delivery-container {
+    margin-left: 6%
+}
+.button-container {
+    margin-left: 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-bottom: 5%;
+    margin-right: 5%;
+}
+.clear {
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.356);
+    padding: 3px;
+    width: 100px;
+}
+.submit {
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.356);
+    padding: 3px;
+    width: 100px;
+}
+.confirm {
+    font-size: 1em;
+    border-radius: 10px;
+    background-color: rgba(255, 0, 0, 0.356);
+    padding: 3px;
+    width: 100px;
+}
+.clear:hover {
+    background-color: rgba(255, 0, 0, 0.544);
+}
+.submit:hover {
+    background-color: rgba(255, 0, 0, 0.544);
+}
+.confirm:hover {
+    background-color: rgba(255, 0, 0, 0.544);
+}
+.errorN {
+    color: red;
+}
+.errorE {
+    color: red;
+}
+footer {
+    width: 100%;
+    height: 15%;
+}
+
+
+ /* part 2 */
+
+
+.form-1.deactivated {
+    display: none;
+}
+.form-2.deactivated {
+    display: none;
+}
+.form-2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 45%;
+    background-color: aliceblue;
+    border: 1px solid black;
+}
+.summary-container {
+    width: 85%;
+    margin: 4% 4% 2% 4%;
+    background-color: rgb(255, 255, 255);
+    padding: 4%;
+
+}
+.summary {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1%;
+    width: 100%;
+}
+.summary-total {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1%;
+    width: 100%;
+}
+.summary-delivery {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 1%;
+    width: 100%;
+}
+.summary-delivery h5 {
+    margin: 1%;
+}
+.summary-total h5 {
+    margin: 1%;
+}
+.summary h5 {
+    margin: 1%;
+}
+.information {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: first baseline;
+    width: 100%;
+}
+.payment-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: first baseline;
+    width: 85%;
+    margin: 2% 4% 2% 4%;
+    background-color: rgb(255, 255, 255);
+    padding: 4%;
+
+}
+.payment-title {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1%;
+
+}
+.visa-container {
+    display: flex;
+}
+.img-visa {
+    width: 50px;
+}
+.visa {
+    width: 100%;
+}
+.payment {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+
+
+}
+.payment div {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1%;
+
+}
+.payment div span {
+    display: flex;
+    align-items:flex-start;
+    margin-top: 3px;
+}
+.payment-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2%;
+}
+.card-img {
+    width: 30px;
+}
+.date {
+    display: flex;
+    justify-content: space-between;
+}
+.billing-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: first baseline;
+    width: 85%;
+    margin: 2% 4% 2% 4%;
+    background-color: rgb(255, 255, 255);
+    padding: 4%;
+
+}
+
+.billing {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1%;
+
+}
+.billing-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2%;
+}
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: first baseline;
+    width: 85%;
+    margin: 2% 4% 2% 4%;
+    background-color: rgb(255, 255, 255);
+    padding: 4%;
+
+}
+.contact-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1%;
+
+}
+.contact-info-email {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 1%;
+
+}
+.contact-btn {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 2%;
+}
+.btn-container {
+    margin: 3% 4% 5% 4%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 92%;
+
+
+}
+.star {
+    color: red;
+}
+.tick {
+    color: green;
+    font-weight: bolder;
+}
+.okay-btn {
+    border: 2px solid green;
+    border-radius: 9px;
+    width: 90px;
+    font-size: 1em;
+    background-color: rgba(144, 238, 144, 0.39);
+}
+.okay-btn:hover {
+    background-color: rgb(144, 238, 144);
+}
+.cancel-btn {
+    background-color: rgba(255, 0, 0, 0.173);
+    border: 2px solid rgb(128, 0, 0);
+    border-radius: 9px;
+    width:150px;
+    font-size: 1em;
+}
+.cancel-btn:hover {
+    background-color: rgba(255, 0, 0, 0.597);
+}
+.cancel-form.cancel-btn {
+    width:90px;
+    margin-left: 7%;
+}
+.make-payment.okay-btn {
+    width: 150px;
+}
+
+.policy {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin-right: 4%;
+    margin-top: 3%;
+    background-color: #007bc7;
+    color: white;
+    font-size: 1.1em;
+    margin-left: 4%;
+    
+}
+.policy h6 {
+    margin: 1%;
+    width: 100%;
+    text-align: center;
+}
+.received {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    background-color: white;
+    box-shadow: 1px 1px 10px 5px rgb(249, 116, 0);
+    height: 60%;
+    width: 40%;
+    padding: 5%;
+    border-radius: 20%;
+}
+.received.deactivated{
+    display: none;
+}
+.material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48;
+    font-size: 130px;
+    color: orange;
+  }

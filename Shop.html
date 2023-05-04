@@ -1,0 +1,290 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://kit.fontawesome.com/7014c1b542.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="shop.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+    </header>
+    <form action="#" class="form-1">
+        <div class="content">
+            <div class="products">
+                <div class="product">
+                    <p class="p-name">Basketball</p>
+                    <p class="p-price">£17</p>
+                    <span class="img-container"><img class="img" src="..\product-form\Products\basketball.jpg" alt="Image not Available"></span>
+                    <label for="quantity1">Quantity: </label>
+                    <select id="quantity1" name="quantity">
+                        <option value="0">0</option>                    
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="product">
+                    <p class="p-name">Cricket-ball</p>
+                    <p class="p-price">£12</p>
+                    <span class="img-container"><img class="img" src="..\product-form\Products\cricket-ball.jfif" alt="Image not Available"></span>
+                    <label for="quantity2">Quantity: </label>
+                    <select id="quantity2" name="quantity">
+                        <option value="0">0</option>   
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="product">
+                    <p class="p-name">Cricket-bat</p>
+                    <p class="p-price">£20</p>
+                    <span class="img-container"><img class="img" src="..\product-form\Products\cricket-bat.jfif" alt="Image not Available"></span>
+                    <label for="quantity3">Quantity: </label>
+                    <select id="quantity3" name="quantity">
+                        <option value="0">0</option>   
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+                <div class="product">
+                    <p class="p-name">Football</p>
+                    <p class="p-price">£18</p>
+                    <span class="img-container"><img class="img" src="..\product-form\Products\football.jpg" alt="Image not Available"></span>
+                    <label for="quantity4">Quantity: </label>
+                    <select id="quantity4" name="quantity">
+                        <option value="0">0</option>   
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                    </select>
+                </div>
+            </div>
+            <div class="list">
+                <div class="title-container">
+                    <h3><i class="fa-solid fa-bag-shopping"> Cart</i></h3>
+                </div>
+                <h4 class="orders">Orders: </h4>
+                <div class="order-list">
+
+                </div>
+                <div class="total-container">
+                    <h4>Total:</h4>
+                    <div class="total-price"></div>
+                </div>
+            </div>
+        </div>
+        <div class="contact-container">
+            <div class="contact">
+                <div class="name-input">
+                    <label for="name">Name: </label>
+                    <input type="text" id="name" name="name" placeholder="Name">
+                    <div class="nameDiv"></div>
+                </div>
+
+                <div class="email-input">
+                    <label for="email">E-mail: </label>
+                    <input type="text" id="email" name="email" placeholder="E-mail">
+                    <div class="emailDiv"></div>
+                </div>
+
+            </div>
+            <div class="submit-container">
+                <div class="delivery-container">
+                    <label for="delivery">Express delivery: </label>
+                    <input type="checkbox" name="delivery" id="delivery" >
+                </div>
+                <div class="button-container">
+                    <button type="button" class="clear">Clear Order</button>
+                    <button type="submit" class="submit">Submit</button>
+                    <button type="button" class="confirm" disabled>Confirm</button>
+                </div>
+
+            </div>
+        </div>
+    </form>
+
+<!-- part 2 -->
+    <form id="payment-form" action="#"></form>
+    <form id="billing-form" action="#"></form>
+    <form id="contact-form" action="#"></form>
+    <div class="form-2 deactivated">
+        <div class="summary-container">
+            <div class="summary">
+                <h2>Order summary</h2>
+                <div>
+                    <label for="language">Language:</label>
+                    <select name="language" id="language"><option value="english">English</option></select>
+                </div>
+            </div>
+            <div class="summary">
+                <h5>Reference: </h5>
+                <h5>900017900000000</h5>
+            </div>
+            <div class="summary">
+                <h5>Description: </h5>
+                <h5>Make Payment</h5>
+            </div>
+            <div class="summary-delivery">
+                <h5>Express Delivery: </h5>
+            </div>
+            <div class="summary-total">
+                <h5>Amount(GBP):</h5>
+            </div>
+        </div>
+        <div class="information">
+            <div class="payment-container">
+                <div class="payment-title">
+                    <div>
+                        <h2>Payment details<i class="star">*</i></h2>
+                    </div>
+                    <div class="visa-container">
+                        <span class="img-visa"><img class="visa" src="..\product-form\Products\visa.jpg" alt="Image Unavailable"></span>
+                    </div>
+                </div>
+                <div class="payment">
+                    <div>
+                        <label for="card-no" class="success">Card number<i class="star">*</i></label>
+                        <input form="payment-form" id="card-no" type="password" inputmode="numeric" name="card-no" required pattern="\d{16}" title="Enter 16 digits.">
+                    </div>
+                    <div>
+                        <label for="card-name">Cardholder's name<i class="star">*</i></label>
+                        <input form="payment-form" id="card-name" type="text" name="card-name" required>
+                    </div>
+                    <div class="date">
+                        <label for="ex-date-m">Expiry data<i class="star">*</i></label>
+                        <span>
+                            <select form="payment-form" name="ex-date-m" id="ex-date-m" required>
+                                <option value="">MM</option>
+                                <option value="1">1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                                <option value="11">11</option>
+                                <option value="12">12</option>
+                            </select>
+                            <label for="ex-date-y">/</label>
+                            <select form="payment-form" name="ex-date-y" id="ex-date-y" required>
+                                <option value="">YY</option>
+                                <option value="23">23</option>
+                                <option value="24">24</option>
+                                <option value="25">25</option>
+                                <option value="26">26</option>
+                                <option value="27">27</option>
+                            </select>
+                        </span>
+                    </div>
+                    <div class="security">
+                        <label for="code">Security code<i class="star">*</i></label>
+                        <span>
+                            <img class="card-img" src="..\product-form\Products\bank-card.jpeg" alt="Image Unavailable">
+                            <input
+                            form="payment-form"
+                            id="code" 
+                            name="card-code"
+                            type="text"
+                            required 
+                            pattern="\d{3}"
+                            title="Must be last 3 digits."/>
+                        </span>
+                    </div>
+                    <div  class="payment-btn">
+                        <button class="cancel-pay cancel-btn" type="button" form="payment-form">Cancel Changes</button>
+                        <button class=" okay-btn" type="submit" form="payment-form">Confirm</button>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="billing-container">
+                <div  class="billing">
+                    <h2>Billing address</h2>
+                </div>
+                <div  class="billing">
+                    <label for="address-1">Address 1:<i class="star">*</i></label>
+                    <input form="billing-form" type="text" id="address-1" name="address-1" required>
+                </div>
+                <div  class="billing">
+                    <label for="address-2">Address 2: </label>
+                    <input form="billing-form" type="text" id="address-2" name="address-2">
+                </div>
+                <div  class="billing">
+                    <label for="address-3">Address 3: </label>
+                    <input form="billing-form" type="text" id="address-3" name="address-3">
+                </div>
+                <div  class="billing">
+                    <label for="city">Town/City:<i class="star">*</i></label>
+                    <input form="billing-form" type="text" id="city" name="city" required>
+                </div>
+                <div  class="billing">
+                    <label for="state">State/Region: </label>
+                    <input form="billing-form" type="text" id="state" name="state">
+                </div>
+                <div  class="billing">
+                    <label for="zip-code">Postcode/Zip code:<i class="star">*</i></label>
+                    <input form="billing-form" type="number" id="zip-code" name="zip-code" required>
+                </div>
+                <div  class="billing">
+                    <label for="country">Country:<i class="star">*</i></label>
+                    <select form="billing-form" name="country" id="country" required>
+                        <option value="">--Country--</option>
+                        <option value="UK">United Kingdom</option>
+                        <option value="USA">USA</option>
+                        <option value="Sri Lanka">Sri Lanka</option>
+                    </select>
+                </div>
+                <div  class="billing-btn">
+                    <button class="cancel-bill cancel-btn" form="billing-form" type="button">Cancel Changes</button>
+                    <button class=" okay-btn" form="billing-form" type="submit">Confirm</button>
+                </div>
+            </div>
+            <div class="contact-details">
+                <div class="contact-info">
+                    <h2>Contact details</h2>
+                </div>
+                <div class="contact-info">
+                    <label for="phone-no">Phone number: </label>
+                    <input form="contact-form" type="tel" id="phone-no" name="phone-no" >
+                </div>
+                <div class="contact-info-email">
+                    <h5>Email address:</h5>
+                </div>
+                <div class="contact-btn">
+                    <button class="cancel-contact cancel-btn" form="contact-form" type="button">Cancel Changes</button>
+                    <button class=" okay-btn" form="contact-form" type="submit">Confirm</button>
+                </div>
+            </div>
+            <div class="btn-container">
+                <button class="cancel-form cancel-btn" type="button">Cancel</button>
+                <button class="make-payment okay-btn" type="button" disabled  >Make Payment</button>
+            </div>
+        </div>
+        <div class="policy">
+            <h6>When you submit your transaction for processing by Worldpay you confirm your acceptance of</h6>
+            <h6> Worldpay's privacy policy</h6>
+            <h6>© Worldpay 2013-2023. All rights reserved.</h6>
+        </div>
+    </div>
+    <div class="received deactivated">
+    </div>
+
+
+    <footer>
+
+
+    </footer>
+    <script src="Shop.js"></script>
+</body>
+</html>
